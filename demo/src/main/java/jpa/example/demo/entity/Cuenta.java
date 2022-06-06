@@ -31,6 +31,7 @@ public class Cuenta {
 	private Banco banco;
 	
 	//Many Cuentas To One Moneda => Esta anotación nos permite definir una relacion @OneToMany en Modena. (Mapeandolo a este campo "moneda")
+	//Para evitar que la consulta sea ciclica (información redundante) se debe agregar la anotación @JsonIgnore
 	@ManyToOne
 	@JoinColumn(name = "idMoneda")
 	@JsonIgnore
