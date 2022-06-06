@@ -1,0 +1,17 @@
+package jpa.example.demo.entity;
+
+import javax.persistence.Entity;
+
+@Entity(name = "cuentas")
+public class Cuenta {
+
+	private long idCuenta;
+	
+	private String descripcion;
+	
+	private String titular;
+	
+	private long idBanco;
+	
+	private long idMoneda;
+}

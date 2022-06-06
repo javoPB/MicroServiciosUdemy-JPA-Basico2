@@ -1,0 +1,10 @@
+package jpa.example.demo.entity;
+
+import javax.persistence.Entity;
+
+@Entity(name = "monedas")
+public class Moneda {
+
+	private long idMoneda;
+	private String nombre;
+}

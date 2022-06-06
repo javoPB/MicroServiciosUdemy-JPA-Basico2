@@ -1,0 +1,5 @@
+package jpa.example.demo.controller;
+
+public class UserController {
+
+}

@@ -1,0 +1,40 @@
+package jpa.example.demo.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity(name = "monedas")
+public class Moneda {
+
+	@Id
+	@Column(name = "idmoneda")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long idMoneda;
+	
+	@Column(name = "nombre")
+	private String nombre;
+
+	public long getIdMoneda() {
+		return idMoneda;
+	}
+
+	public void setIdMoneda(long idMoneda) {
+		this.idMoneda = idMoneda;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	@Override
+	public String toString() {
+		return this.getIdMoneda() + ", " + this.getNombre();
+	}
+}

@@ -1,0 +1,7 @@
+package jpa.example.demo.service;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public class UserService implements JpaRepository<Long, ID> {
+
+}

@@ -1,0 +1,26 @@
+package jpa.example.demo.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import jpa.example.demo.entity.User;
+import jpa.example.demo.repository.UserRepository;
+import jpa.example.demo.service.UserService;
+
+public class UserServiceImpl implements UserService {
+
+	@Autowired
+	private UserRepository userRepository;
+	
+	@Override
+	public List<User> getListUser() {
+		return userRepository.findAll();
+	}
+
+	@Override
+	public User getUser(Long idUser) {
+		return userRepository.getById(idUser);
+	}
+
+}

@@ -1,0 +1,12 @@
+package jpa.example.demo.entity;
+
+import javax.persistence.Entity;
+
+@Entity(name = "user")
+public class User {
+	
+	private int idUser;
+	private String user;
+	private String password;
+
+}

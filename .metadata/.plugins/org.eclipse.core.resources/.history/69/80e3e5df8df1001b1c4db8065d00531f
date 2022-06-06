@@ -1,0 +1,5 @@
+package jpa.example.demo.entity;
+
+public class Cuenta {
+
+}

@@ -1,0 +1,21 @@
+package jpa.example.demo.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity(name = "bancos")
+public class banco {
+
+	@Id
+	@Column(name = "idbanco")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long idBanco;
+	
+	@Column(name = "nombre")
+	private String nombre;
+	
+	
+}
